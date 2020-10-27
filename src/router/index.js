@@ -11,13 +11,17 @@ const routes = [
     component: Home
   },
   {
-    path: "/apigenerator",
-    name: "API Generator",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+    path: "/cssgenerator",
+    name: "Css Generator",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Apigenerator.vue")
+      import(/* webpackChunkName: "about" */ "../views/Cssgenerator.vue")
+  }
+  ,
+  {
+    path: "/doc",
+    name: "Documentation",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/doc.vue")
   }
 ];
 

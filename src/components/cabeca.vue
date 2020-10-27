@@ -8,9 +8,14 @@
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
 
       <v-toolbar-title>Luk3D</v-toolbar-title>
-
-        <v-btn>API generator</v-btn>
-        <v-btn>Css generator</v-btn>
+      <v-spacer width="10"></v-spacer>
+        
+       
+        <router-link class="btn" to="/"> <v-btn>API generator</v-btn> </router-link>
+        
+        <router-link class="btn" to="/cssgenerator"> <v-btn>Css generator</v-btn></router-link>
+        <router-link class="btn" to="/doc"> <v-btn>Documentation</v-btn></router-link>
+      
 
       <v-spacer></v-spacer>
 
@@ -58,4 +63,11 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.btn{
+
+  text-decoration: none;
+  
+}
+
+</style>
